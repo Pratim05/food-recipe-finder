@@ -13,6 +13,15 @@ const fileUpload = require("express-fileupload");
 const path = require('path')
 
 const app = express()
+
+// Serve static files from the 'client/build' directory
+app.use(express.static(path.resolve(__dirname, './client/build')));
+
+// Catch-all route to serve 'index.html' for any other routes
+app.get('*', function(req, res) {
+  res.sendFile(path.resolve(__dirname, './client/build/index.html'));
+});
+
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use("*",cors({
@@ -101,11 +110,11 @@ app.post('/Dashboard', async (req, res) => {
  
 
 
-//static file
-app.use(express.static(path.join(__dirname,'./client/build')))
-app.get('*', function(req,res){
-    res.sendFile(path.join(__dirname, './client/build/index.html'))
-})
+// //static file
+// app.use(express.static(path.join(__dirname,'./client/build')))
+// app.get('*', function(req,res){
+//     res.sendFile(path.join(__dirname, './client/build/index.html'))
+// })
 
 
 app.listen(8000,()=>{
