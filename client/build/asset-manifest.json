@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4dde8163.css",
-    "main.js": "/static/js/main.cb8fcf30.js",
+    "main.js": "/static/js/main.c6e92397.js",
     "static/media/header.jpg": "/static/media/header.5176889188ee20c9ad99.jpg",
     "static/media/logo_of_Food_recipe_finder.jpg": "/static/media/logo_of_Food_recipe_finder.a2f1cfa57567597b9a29.jpg",
     "static/media/Unlock.png": "/static/media/Unlock.44441fa59d6caea97cd0.png",
@@ -9,10 +9,10 @@
     "index.html": "/index.html",
     "static/media/loader.svg": "/static/media/loader.16cf435655431c7d0a8346889065bd53.svg",
     "main.4dde8163.css.map": "/static/css/main.4dde8163.css.map",
-    "main.cb8fcf30.js.map": "/static/js/main.cb8fcf30.js.map"
+    "main.c6e92397.js.map": "/static/js/main.c6e92397.js.map"
   },
   "entrypoints": [
     "static/css/main.4dde8163.css",
-    "static/js/main.cb8fcf30.js"
+    "static/js/main.c6e92397.js"
   ]
 }
